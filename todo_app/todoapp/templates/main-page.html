@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Главная страница</title>
+    <link
+      href="{% static 'todoapp/css/main-page.css' %}"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <center>
+      <h1>Ваши задачи</h1>
+      {% for i in task %} {{i.text}} - {{i.time}}<br />
+      {% endfor %}
+      <form method="post" action="{% url 'add-page' %}">
+        {% csrf_token %}
+        <button
+          type="submit"
+          class="redirect-to-add-page"
+          id="redirect-to-add-page"
+          onmouseover="changeColor()"
+          onmouseout="resetColor()"
+        >
+          + Добавить
+        </button>
+      </form>
+
+      <form action="{% url 'settings' %}">
+        <button type="submit" class="settings" id="settings">Настройки</button>
+      </form>
+    </center>
+    <script src="{% static 'todoapp/js/main-page.js' %}"></script>
+  </body>
+</html>

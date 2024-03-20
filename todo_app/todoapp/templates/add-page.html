@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Страница для добавления</title>
+    <link
+      href="{% static 'todoapp/css/add-page.css' %}"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <center>
+      <form method="post">
+        {% csrf_token %} {{ form.as_p }}
+        <button
+          type="submit"
+          class="add-task"
+          id="add-task"
+          onmouseover="changeColor()"
+          onmouseout="resetColor()"
+        >
+          Добавить
+        </button>
+      </form>
+    </center>
+    <script src="{% static 'todoapp/js/add-page.js' %}"></script>
+  </body>
+</html>
