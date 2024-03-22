@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .forms import FormTask
+from .forms import FormTask, FormSetting
 from .models import Task
 
 def open_main_page(request):
@@ -20,4 +20,5 @@ def add_task(request):
     return render(request, 'add-page.html', {'form': form})
 
 def show_settings(request):
-    return render(request, 'settings.html')
+    form = FormSetting()
+    return render(request, 'settings.html', {'form': form})

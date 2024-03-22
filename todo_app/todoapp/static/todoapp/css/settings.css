@@ -1,0 +1,9 @@
+button.change-topic {
+    background-color: blue !important;
+    border-color: blue !important;
+    color: white;
+    position: relative;
+    top: 5px;
+    width: 90px;
+    height: 30px;
+}

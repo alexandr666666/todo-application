@@ -13,6 +13,13 @@
   <body>
     <center>
       <h1>Настройки приложения</h1>
+      <form method="post">
+        {% csrf_token %} {{ form.as_p }}
+        <button type="submit" class="change-topic" id="change-topic">
+          Изменить тему
+        </button>
+      </form>
     </center>
+    <script src="{% static 'todoapp/js/settings.js' %}"></script>
   </body>
 </html>

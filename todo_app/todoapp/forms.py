@@ -13,3 +13,11 @@ class FormTask(forms.ModelForm):
             'text': {'required': ''},
             'time': {'required': ''}
         }
+
+class FormSetting(forms.Form):
+    OPTIONS = [
+        ('light', 'Светлая тема'),
+        ('dark', 'Темная тема')
+    ]
+    options = forms.ChoiceField(choices=OPTIONS, label='')
+

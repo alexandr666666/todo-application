@@ -12,3 +12,7 @@ input {
     width: 160px;
     height: 40px;
 }
+
+input:hover {
+    border-color: black;
+}
