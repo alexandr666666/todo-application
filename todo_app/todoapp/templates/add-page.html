@@ -9,9 +9,14 @@
       rel="stylesheet"
       type="text/css"
     />
+    <style>
+      .centered {
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
-    <center>
+    <div class="centered">
       <form method="post">
         {% csrf_token %} {{ form.as_p }}
         <button
@@ -24,7 +29,7 @@
           Добавить
         </button>
       </form>
-    </center>
+    </div>
     <script src="{% static 'todoapp/js/add-page.js' %}"></script>
   </body>
 </html>

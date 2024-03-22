@@ -1,4 +1,4 @@
-button.change-topic {
+.change-topic {
     background-color: blue !important;
     border-color: blue !important;
     color: white;
@@ -9,7 +9,7 @@ button.change-topic {
     font-size: 20px;
 }
 
-.change-color:hover {
-    background-color: green !important;
-    border-color: green !important;
+.change-topic:hover {
+    background-color: green;
+    border-color: green;
 }

@@ -9,9 +9,14 @@
       rel="stylesheet"
       type="text/css"
     />
+    <style>
+      .centered {
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
-    <center>
+    <div class="centered">
       <h1>Настройки приложения</h1>
       <form method="post">
         {% csrf_token %} {{ form.as_p }}
@@ -19,7 +24,6 @@
           Изменить тему
         </button>
       </form>
-    </center>
-    <script src="{% static 'todoapp/js/settings.js' %}"></script>
+    </div>
   </body>
 </html>
