@@ -6,4 +6,10 @@ button.change-topic {
     top: 5px;
     width: 90px;
     height: 30px;
+    font-size: 20px;
+}
+
+.change-color:hover {
+    background-color: green !important;
+    border-color: green !important;
 }
