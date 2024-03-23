@@ -1,0 +1,24 @@
+.redirect-to-add-page {
+    background-color: blue;
+    border-color: blue;
+    color: white;
+    position: relative;
+    top: 10px;
+    width: 90px;
+    height: 30px;
+}
+
+.settings {
+    background-color: blue;
+    border-color: blue;
+    color: white;
+    position: relative;
+    top: 20px;
+    width: 90px;
+    height: 30px;
+}
+
+.settings:hover {
+    background-color: green;
+    border-color: green;
+}
