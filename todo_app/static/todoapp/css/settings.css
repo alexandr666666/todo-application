@@ -14,11 +14,12 @@
     border-color: green;
 }
 
-input {
-    width: 150px;
-    height: 35px;
+.light-theme {
+    background-color: #fff;
+    color: #000;
 }
 
-input:hover {
-    border-color: black;
+.dark-theme {
+    background-color: black;
+    color: #fff;
 }

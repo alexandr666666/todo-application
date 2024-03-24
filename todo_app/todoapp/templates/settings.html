@@ -8,6 +8,7 @@
       href="{% static 'todoapp/css/settings.css' %}"
       rel="stylesheet"
       type="text/css"
+      id="theme"
     />
     <style>
       .centered {
@@ -18,12 +19,8 @@
   <body>
     <div class="centered">
       <h1>Настройки приложения</h1>
-      <form method="post">
-        {% csrf_token %} {{ form.as_p }}
-        <button type="submit" class="change-topic" id="change-topic">
-          Изменить тему
-        </button>
-      </form>
+      <input type="checkbox" id="darkmode-toggle" />
+      <label for="darkmode-toggle"></label>
     </div>
   </body>
 </html>

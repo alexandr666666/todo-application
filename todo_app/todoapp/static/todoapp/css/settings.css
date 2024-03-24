@@ -14,11 +14,3 @@
     border-color: green;
 }
 
-input {
-    width: 150px;
-    height: 35px;
-}
-
-input:hover {
-    border-color: black;
-}
